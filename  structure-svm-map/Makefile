@@ -48,7 +48,7 @@ svm_struct_clean:
 #--------------------------#
 #----  SVM python API  ----#
 #--------------------------#
-PYTHON_FLAGS = -LC:\Python26\libs -LC:\Python26\libs\mingw -IC:\Python26\include -lpython26
+PYTHON_FLAGS = -L.\python-mingw-lib -IC:\Python26\include -lpython26
 
 python-link:
 	MACOSX_DEPLOYMENT_TARGET=10.3

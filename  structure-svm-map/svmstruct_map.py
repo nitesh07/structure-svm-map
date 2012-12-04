@@ -113,6 +113,7 @@ def read_struct_examples(filename, sparm):
         examples=[]
         for line_idx, line in enumerate(lines):
             #print pre_qid,line_idx
+            """ For each line, the first element is the label, the rest ones are features"""
             label=float(line[0])
             if(label<=0):
                 label=-1
@@ -168,7 +169,6 @@ def read_struct_examples(filename, sparm):
                 feature_id_list=[]
                 feature_value_list=[]
                 relevance_list=[]
-
 
             feature_ids=array.array('I')  #list of feature id's for a single document
             feature_values=array.array('f') #corresponding list of feature values
